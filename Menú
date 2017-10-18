@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(){
+	int a=0;
+	int b=0;
+	char op;
+do{	
+	printf("Este es el menu\n");
+	printf("Presiona 1 para realizar suma y enter\n");
+	printf("Presiona 2 para realizar una resta y enter\n");
+	printf("Presiona 3 para salir y enter\n\n");
+	scanf("%d",&op);
+	
+switch (op){
+	case 1:
+	printf("Este programa sumara dos numeros\n");
+	printf("Dame un primer numero:\n");
+	scanf("%d",&a);
+	printf("Dame un segundo numero:\n");
+	scanf("%d",&b);
+	printf("La suma de los numeros es: %d\n\n", a+b);
+	break;
+	case 2:
+	printf("Este programa restara dos numeros\n");
+	printf("Dame un primer numero:\n");
+	scanf("%d",&a);
+	printf("Dame un segundo numero:\n");
+	scanf("%d",&b);
+	printf("La suma de los numeros es: %d\n\n", a-b);
+	break;
+	case 3:
+	printf("Adios, bye, bye");
+	break;
+}
+} while (op!=3);
+}
